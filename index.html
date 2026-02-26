@@ -15,8 +15,17 @@
             <i class="fa-regular fa-copy fa-2x"></i>
         </div>
         <button class="btn">Generate Password</button>
+        <div>
         <label for="num-length">Password size: <span id="slider-value"></span></label>
         <input class="input" type="number" id="num-length" min="6" max="64" value="" placeholder="14">
+        </div>
+        <p>Choose which characters you want in your password</p>
+        <div class="char-option">
+            <button class="chip active" data-type="lowercaseletters">a-z</button>
+            <button class="chip active" data-type="uppercaseletters">A-Z</button>
+            <button class="chip active" data-type="numbers">0-9</button>
+            <button class="chip" data-type="specialchars">!@#$%</button>
+        </div>
     </div>
     <div class="alert-container active"></div>
     <script src="index.js"></script>

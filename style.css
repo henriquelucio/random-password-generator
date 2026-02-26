@@ -52,7 +52,8 @@ body{
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
-    margin: 10px 0;
+    display: block;
+    margin: 10px auto;
     font-size: 20px;
     cursor: pointer;
 }
@@ -83,4 +84,19 @@ body{
 
 .active.alert-container{
     right: -300px;
+}
+
+.chip{
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+.chip.active{
+    background-color: #4CAF50;
+    color:white;
+    border-color: #4CAF50;
 }
